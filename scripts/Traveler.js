@@ -6,14 +6,14 @@ class Traveler {
     }
 
     hunt() {
-        food += 2;
+        this.food += 2;
     }
 
     eat() {
-        food -= 1;
-        if (food <= 0) {
+        this.food -= 1;
+        if (this.food <= 0) {
             this.isHealthy = false;
-            food -= 1;
+            this.food = 0;
         }
     }
 }
