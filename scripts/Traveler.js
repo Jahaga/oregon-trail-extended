@@ -10,10 +10,9 @@ class Traveler {
     }
 
     eat() {
-        this.food -= 1;
-        if (this.food <= 0) {
+        if (this.food > 0) {
+            this.food -= 1;
+        } else if (this.food === 0)
             this.isHealthy = false;
-            this.food = 0;
-        }
     }
 }
